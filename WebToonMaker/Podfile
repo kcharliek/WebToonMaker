@@ -1,0 +1,14 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '10.0'
+
+target 'WebToonMaker' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for WebToonMaker
+  pod 'SnapKit' #AutoLayout helper
+  pod 'Toaster' #Toast popup
+  pod 'Then' #Swift initializer
+  pod 'Actions' #Easy to make action
+  pod 'PKHUD' #Activity indicator
+end

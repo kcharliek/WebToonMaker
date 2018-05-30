@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumGothicBold.otf">
+            <string>NanumGothicOTFBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BookShelfCollectionViewCell" customModule="ToonMaker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="209" height="285"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="209" height="285"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="etc_noImage" translatesAutoresizingMaskIntoConstraints="NO" id="OCb-zS-qLH">
+                        <rect key="frame" x="21" y="0.0" width="168" height="251.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="OCb-zS-qLH" secondAttribute="height" multiplier="2:3" id="ZHy-Ba-lI9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만화 제목" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Qmr-hn-oGr">
+                        <rect key="frame" x="15" y="251.5" width="179" height="33.5"/>
+                        <fontDescription key="fontDescription" name="NanumGothicOTFBold" family="NanumGothicOTF" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Qmr-hn-oGr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="9JN-oh-epU"/>
+                <constraint firstAttribute="bottom" secondItem="Qmr-hn-oGr" secondAttribute="bottom" id="CqD-8L-mYo"/>
+                <constraint firstItem="Qmr-hn-oGr" firstAttribute="top" secondItem="OCb-zS-qLH" secondAttribute="bottom" id="NFR-D8-yoM"/>
+                <constraint firstItem="OCb-zS-qLH" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.8" id="O4k-Kj-RkR"/>
+                <constraint firstAttribute="trailing" secondItem="Qmr-hn-oGr" secondAttribute="trailing" constant="15" id="nd2-sG-157"/>
+                <constraint firstItem="Qmr-hn-oGr" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="q0U-i0-kxJ"/>
+                <constraint firstItem="OCb-zS-qLH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ril-VQ-iyz"/>
+                <constraint firstItem="OCb-zS-qLH" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="zPK-f5-jBp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="209" height="285"/>
+            <connections>
+                <outlet property="coverImageView" destination="OCb-zS-qLH" id="ZQm-qv-y5N"/>
+                <outlet property="titleLabel" destination="Qmr-hn-oGr" id="Nfb-4g-5kT"/>
+            </connections>
+            <point key="canvasLocation" x="-36.5" y="57.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="etc_noImage" width="187" height="231"/>
+    </resources>
+</document>

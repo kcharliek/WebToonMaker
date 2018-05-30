@@ -1,0 +1,32 @@
+PODS:
+  - Actions (2.2.1)
+  - PKHUD (5.0.0)
+  - SnapKit (4.0.0)
+  - Then (2.3.0)
+  - Toaster (2.1.1)
+
+DEPENDENCIES:
+  - Actions
+  - PKHUD
+  - SnapKit
+  - Then
+  - Toaster
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Actions
+    - PKHUD
+    - SnapKit
+    - Then
+    - Toaster
+
+SPEC CHECKSUMS:
+  Actions: 6158e6d06ebb505181726abfbca7cb0ca8356067
+  PKHUD: 3c001512c6e002091184197a8de7a20420786e3b
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  Then: ee21c97b85ff6062b9b0080c9abb1eea46743345
+  Toaster: a6c9532de1ded8105e77376f7dffeb2e12b46dbb
+
+PODFILE CHECKSUM: 0befff8a6bf11a1fdb3e9d4916d4dbe8aac32f6c
+
+COCOAPODS: 1.5.0

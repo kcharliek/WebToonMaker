@@ -1,0 +1,6 @@
+framework module Actions {
+  umbrella header "Actions-umbrella.h"
+
+  export *
+  module * { export * }
+}

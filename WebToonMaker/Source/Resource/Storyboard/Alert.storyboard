@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Font Text Field Alert View Controller-->
+        <scene sceneID="RlT-ff-2pm">
+            <objects>
+                <viewController storyboardIdentifier="FontTextFieldAlertViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9dS-zD-vk7" customClass="FontTextFieldAlertViewController" customModule="WebToonMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pYS-rP-4YT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UfY-nq-H7L" userLabel="background">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="0.57373715749999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s4O-dt-fvL">
+                                <rect key="frame" x="28.5" y="195" width="318.5" height="159.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8wk-ee-rPY">
+                                        <rect key="frame" x="0.0" y="115.5" width="318.5" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gh0-A4-lnD">
+                                                <rect key="frame" x="0.0" y="0.0" width="159.5" height="44"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="취소"/>
+                                                <connections>
+                                                    <action selector="cancelBtnClicked:" destination="9dS-zD-vk7" eventType="touchUpInside" id="e0f-LU-6FE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ld-oe-XFe">
+                                                <rect key="frame" x="159.5" y="0.0" width="159" height="44"/>
+                                                <state key="normal" title="추가"/>
+                                                <connections>
+                                                    <action selector="addBtnClicked:" destination="9dS-zD-vk7" eventType="touchUpInside" id="TZr-j5-mxo"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="hNY-32-wZp"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iaz-ZO-uPl">
+                                        <rect key="frame" x="0.0" y="0.0" width="318.5" height="115.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Efl-XP-d8Q">
+                                                <rect key="frame" x="-1" y="9" width="319" height="97"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="텍스트를 입력해주세요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9X-7V-YZi">
+                                                        <rect key="frame" x="0.0" y="0.0" width="319" height="27"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rd7-Xb-4P6" customClass="FontPickerTextField" customModule="WebToonMaker" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="47" width="319" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="S3o-AF-hAQ"/>
+                                                        </constraints>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Efl-XP-d8Q" firstAttribute="centerX" secondItem="iaz-ZO-uPl" secondAttribute="centerX" id="4Sn-Kx-f8b"/>
+                                            <constraint firstItem="Efl-XP-d8Q" firstAttribute="centerY" secondItem="iaz-ZO-uPl" secondAttribute="centerY" id="X8q-IS-iQB"/>
+                                            <constraint firstItem="Efl-XP-d8Q" firstAttribute="width" secondItem="iaz-ZO-uPl" secondAttribute="width" id="m6k-7w-bpH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="iaz-ZO-uPl" secondAttribute="trailing" id="64E-Md-xpr"/>
+                                    <constraint firstItem="iaz-ZO-uPl" firstAttribute="top" secondItem="s4O-dt-fvL" secondAttribute="top" id="Enr-6B-OjA"/>
+                                    <constraint firstItem="8wk-ee-rPY" firstAttribute="leading" secondItem="s4O-dt-fvL" secondAttribute="leading" id="Wxt-9D-or0"/>
+                                    <constraint firstAttribute="trailing" secondItem="8wk-ee-rPY" secondAttribute="trailing" id="XND-8b-ZEN"/>
+                                    <constraint firstAttribute="width" secondItem="s4O-dt-fvL" secondAttribute="height" multiplier="2:1" id="bJl-2B-irl"/>
+                                    <constraint firstAttribute="bottom" secondItem="8wk-ee-rPY" secondAttribute="bottom" id="dp2-wR-jOR"/>
+                                    <constraint firstItem="iaz-ZO-uPl" firstAttribute="leading" secondItem="s4O-dt-fvL" secondAttribute="leading" id="gsm-a1-EHE"/>
+                                    <constraint firstItem="8wk-ee-rPY" firstAttribute="top" secondItem="iaz-ZO-uPl" secondAttribute="bottom" id="jTj-GH-ZLf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="s4O-dt-fvL" firstAttribute="width" secondItem="pYS-rP-4YT" secondAttribute="width" multiplier="0.85" id="81p-Im-oaI"/>
+                            <constraint firstItem="s4O-dt-fvL" firstAttribute="centerY" secondItem="9hu-PX-FqN" secondAttribute="centerY" multiplier="0.8" id="GnH-SA-zCB"/>
+                            <constraint firstAttribute="trailing" secondItem="UfY-nq-H7L" secondAttribute="trailing" id="Mks-Sp-c9g"/>
+                            <constraint firstAttribute="bottom" secondItem="UfY-nq-H7L" secondAttribute="bottom" id="Q73-wp-siP"/>
+                            <constraint firstItem="UfY-nq-H7L" firstAttribute="leading" secondItem="pYS-rP-4YT" secondAttribute="leading" id="X80-4u-nF1"/>
+                            <constraint firstItem="s4O-dt-fvL" firstAttribute="centerX" secondItem="9hu-PX-FqN" secondAttribute="centerX" id="agp-9W-7tB"/>
+                            <constraint firstItem="UfY-nq-H7L" firstAttribute="top" secondItem="pYS-rP-4YT" secondAttribute="top" id="bw3-yZ-3eF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9hu-PX-FqN"/>
+                    </view>
+                    <connections>
+                        <outlet property="fontPickerTextField" destination="Rd7-Xb-4P6" id="QtR-Pf-Mfb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MXJ-y2-oU4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5244" y="-993.55322338830592"/>
+        </scene>
+    </scenes>
+</document>
